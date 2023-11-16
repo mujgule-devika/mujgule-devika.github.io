@@ -1,7 +1,13 @@
+body {
+  background-color: #B5EF8A;
+  color: #25291C;
+  font-size: x-large;
+}
+
 .App {
   text-align: center;
   padding: 10%;
-  background-color: #F3CA40;
+  background-color: #7FC29B;
 }
 
 .App-logo {
