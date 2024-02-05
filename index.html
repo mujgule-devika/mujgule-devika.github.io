@@ -11,113 +11,173 @@
   <script src="index.js"></script>
 </head>
 <body>
-<div class="homepage">
+
+  <nav id="navbar">
+    <a href="#contact">contact</a>
+    <a href="#Work">work</a>
+    <a href="#Projects">projects</a>
+    <a href="#home">home</a>
+    <button class="nav-toggle" id="navToggle">☰</button>
+</nav>
+
+<div class="homepage" id="home">
   <div class="homepage-image">
     <img class ="homepage-img"src="resources/doodle.jpeg" alt="doodle-image">
   </div>
   <div class="homepage-content">
     <h1>Hey, I am Devika Mujgule</h1>
+    <!-- <p>You can call me devs</p> -->
     <ul>
-      <li>I'm a Frontend Engineer, Design Enthusiast, Optimist and Problem Solver</li>
+      <li>I'm a Frontend Engineer with a passion for design, product, and UX </li>
+      <!-- <li>I am committed to creating functional user experiences and engaging user experience through clean code. My goal is to develop applications that not only offer a natural and fluid user experience but also serve a purpose that positively impacts humanity</li> -->
       <li>Please reach out to me at 
        <a href="mailto:mujgule.devika07@gmail.com">mujgule.devika07@gmail.com</a> </li>
     </ul>
     <h3>My <a href="https://www.linkedin.com/in/devikamujgule/">LinkedIn</a></h3>
     <h3>My <a href="https://github.com/mujgule-devika/">Github</a></h3>
   </div>
-
 </div>
-<div class="projects">
+
+<div class="projects" id="Projects">
   <h1 class="titles">Projects</h1>
   <div class="container">
-      <div class="block"> 
-        <div>
-        <a class="project-links" href="https://github.com/mujgule-devika/Event-Tracker" target="_blank">
-      
-        
-          <h2>Events Tracker</h2>
+
+      <div class="block project">       
+        <a class="project-links" href="https://github.com/mujgule-devika/Event-Tracker" target="_blank">      
+        <div class="image-div">
+            <img src="resources/event_mockup.png" alt="events project image">
+          </div>
+          <div class="item">
+          <h2>Events</h2>
           <p>
-            Centralized event tracker for Boston using ReactJs, Redux, NodeJS, ExpressJS, and MongoDB. Features include authentication, event scheduling, Google Calendar, and Google OAuth. The project aims to help people explore Boston's cultural diversity and events.
+            Centralized event tracker for Boston. The project aims to help people explore Boston's cultural diversity and events.
           </p>
         </div>
-    
-        <img src="resources/events.png" alt="events project image">
       </a>
       </div>
-      <div class="block"> 
-        <div>
+      <div class="block project"> 
+       
         <a class="project-links" href="https://github.com/mujgule-devika/Advanced-RESTAPI-and-Indexing" target="_blank">
       
-      
+          <div class="image-div">
+            <img src="resources/rest-api-logo.png" alt="events project image">
+         </div>
+      <div class="item"> 
           <h2>RESTful APIs</h2>
           <p>
-            Advanced Rest APIs in NodeJS that can handle any structured data in Json, validate the same and save the Json Schema in Redis. Use indexing techiques using Elastic Search to support logical operators, wildcards, geolocation, join, and aggregate queries.
-          </p>
-        </div>
-     
-        <img src="resources/events.png" alt="events project image">
-      </a>
-      </div>
-      <div class="block"> 
-        <div>
-        <a class="project-links" href="https://github.com/mujgule-devika/ProductivityBooster" target="_blank">
-       
-          <h2>Productivity Booster</h2>
-          <p>
-            Productivity Booster App built with Java and JavaFX Scene Builder adn CSS. 
+            Advanced Rest APIs in Node.js that can handle any structured data in Json. Currently migrating to GraphQL.
           </p>
         </div>
       
-        <img src="resources/productivityBooster.png" alt="Java Project">
+        </a>
+       
+      </div>
+      <div class="block project"> 
+       
+        <a class="project-links" href="https://github.com/mujgule-devika/ProductivityBooster" target="_blank">
+       <div class="image-div">
+        <img src="resources/prodBooster_mockup.png" alt="Java Project">
+      </div>
+
+      <div class="item">
+        <h2>Productivity Booster</h2>
+        <p>
+          Productivity Booster App, designed to assist neurodiverse individuals in completing tasks through psychological techniques. 
+        </p>
+      </div>
         </a>
       </div>
-      <!-- <div class="block"> 
-        <h2>Events Tracker</h2>
-      </div> -->
-      <div class="block" > 
-        <div onclick=redirectToPage()>   
-          <h2>Curb</h2>
-          <p>
-            A screen time management app design solution. The idea behind it was to make it as minimalistic as possible and deliver the most important features instead of overcrowding. The design aims at simple navigation and higher flexibility to set app timers and screen time goals. It delivers easy to understand stats and higher control on granularity of them.          </p>
-        </div>
-      
 
-        <img src="resources/curb.png" alt="events project image">
+      <div class="block project" > 
+
+        <a class="project-links" href="https://www.figma.com/proto/r34OVgRUHVNoi5MSKxiQWM/DevikaMujgule_Spring2022?type=design&node-id=662-5847&t=HpyjWaHQdplEfuJQ-1&scaling=min-zoom&page-id=456%3A2254&starting-point-node-id=662%3A5847" target="_blank">
+          <div class="image-div">
+            <img src="resources/curb_mockup.png" alt="events project image">  
+          </div>
+
+          <div class="item"> 
+          <h2>Curb</h2>
+          <p> A Digital wellbeing app with minimalistic design instead of overcrowding.     
+          </p>
+        </div>
+      </a>
       </div>
-      <div class="block"> 
-        <div>
+
+      <div class="block project"> 
+        <a class="project-links" href="https://www.figma.com/proto/r34OVgRUHVNoi5MSKxiQWM/DevikaMujgule_Spring2022?type=design&node-id=990-8938&t=TkTb1qGauePumnRb-1&scaling=min-zoom&page-id=793%3A7010&mode=design" target="_blank">
+          <div class="image-div">
+             <img src="resources/amazon_mockup.png" alt="amazon image">
+            </div>
+         <div class="item">
           <h2>Amazon Feature</h2>
-          <p>Designed set of features within the Amazon app that will provide support to the people of Ukraine. This feature set was designed with the flexibility to be repurposed for future humanitarian crises or major social issues.</p>
+          <p>Designed set of features within the Amazon app to support Ukraine. These features are designed for flexibility, allowing repurposing for future humanitarian crises or significant social issues</p>
         </div>
-   
-        <img src="resources/amazon.png" alt="amazon image">
+        </a>
       </div>
-      <div class="block"> 
-        <div>
-          <h2>Northeastern Banner</h2>
-          <p>Designed set of features within the Amazon app that will provide support to the people of Ukraine. This feature set was designed with the flexibility to be repurposed for future humanitarian crises or major social issues.</p>
+
+      <div class="block project"> 
+        <div class="image-div">
+          <img src="resources/neu_course_registration_mockup.png" alt="amazon image">
+          </div>
+          <div class="item">
+          <h2>Northeastern Course Registration</h2>
+          <p>Re-designed Northeastern University's Course Registration Portal.</p>
         </div>
-        <img src="resources/NEUbanner.png" alt="amazon image">
       </div>
+
   </div>
 </div>
-<div>
+
+<div class="work" id="Work">
   <h1 class="titles">Experience</h1>
   <div class="container">
     <div class="block"> 
-      <h2>Frontend Engineer Co-op</h2>
+      <h2>Frontend Engineer Co-op </h2>
+      <h3> Spruce Holdings</h3>
+      <h4>2022 - 2023</h4>
+      
     </div>
     <div class="block"> 
       <h2>Application Developer I</h2>
+      <h3>VIAVI Solutions</h3>
+      <h4>2018 - 2021</h4>
+
     </div>
     <div class="block"> 
       <h2>Teaching Assistant</h2>
+      <h3>Northeaster University</h3>
+      <h4> 2023 - 2024</h4>
     </div>
-    <div class="block"> 
-      <h2>SSG, IT, Events</h2>
+
+    <div class="block">
+      <button class="work-btn">See Work History</button>
     </div>
+
   </div>
 </div>
+
+<footer>
+<!-- <div>
+  <a href="#contact">contact</a>
+  <a href="#Work">work</a>
+  <a href="#Projects">projects</a>
+  <a href="#home">home</a>
+</div> -->
+<div>
+  <h1 class="footer-text">Let's Chat!</h1>
+  <h2 class="footer-text">I'm Open to Work</h2> 
+  <span class="footer-text">{Frontend UIUX Software}</span>
+</div>
+<div> 
+  <a href="https://www.linkedin.com/in/devikamujgule
+  ">linkedin</a>
+  <a href="https://github.com/mujgule-devika
+  ">github</a>
+  <a href="https://www.behance.net/mujguledevea03">behance</a>
+  <a href="mailto:mujgule.devika07@gmail.com">email</a> 
+</div>
+
+</footer>
 </div>
 </body>
 </html>
