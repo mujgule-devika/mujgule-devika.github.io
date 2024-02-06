@@ -194,7 +194,14 @@ footer a {
 }
 
 .work-btn {
+  font-size: 14px;
   background-color: #fff;
   border: #333 solid;
   padding: 1%;
+}
+
+.work-btn:hover {
+  background-color: #e65f5c ;
+  color: #fff ;
+  cursor: pointer;
 }

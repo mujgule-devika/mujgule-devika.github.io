@@ -1,4 +1,4 @@
 
 function redirectToPage() {
-  window.location.href = 'html/curb.html';
+  window.location.href = 'html/work-history.html';
 }
