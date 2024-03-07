@@ -131,8 +131,13 @@ mark {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  align-items: center;
+  width: 20vw;
+  height: max-content;
+}
+
+.image-div {
+align-items: center;
 }
 
 p {
